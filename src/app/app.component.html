@@ -1,20 +1,229 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
-  <img width="300" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyNTAgMjUwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNTAgMjUwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojREQwMDMxO30NCgkuc3Qxe2ZpbGw6I0MzMDAyRjt9DQoJLnN0MntmaWxsOiNGRkZGRkY7fQ0KPC9zdHlsZT4NCjxnPg0KCTxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iMTI1LDMwIDEyNSwzMCAxMjUsMzAgMzEuOSw2My4yIDQ2LjEsMTg2LjMgMTI1LDIzMCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAJIi8+DQoJPHBvbHlnb24gY2xhc3M9InN0MSIgcG9pbnRzPSIxMjUsMzAgMTI1LDUyLjIgMTI1LDUyLjEgMTI1LDE1My40IDEyNSwxNTMuNCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAxMjUsMzAgCSIvPg0KCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xMjUsNTIuMUw2Ni44LDE4Mi42aDBoMjEuN2gwbDExLjctMjkuMmg0OS40bDExLjcsMjkuMmgwaDIxLjdoMEwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMQ0KCQlMMTI1LDUyLjF6IE0xNDIsMTM1LjRIMTA4bDE3LTQwLjlMMTQyLDEzNS40eiIvPg0KPC9nPg0KPC9zdmc+DQo=">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="http://angularjs.blogspot.com/">Angular blog</a></h2>
-  </li>
-</ul>
+<br />
+<form   (ngSubmit)="onSubmit()" #f="ngForm">
+<div class="container">
 
+  <div class="row">
+
+    <div class="col-lg-6">
+      <div class="panel panel-default" ngModelGroup="clientData" #cd>
+        <div class="panel-heading" >Client Data </div>
+        <div class="panel-body">
+          <label for="nifvat"> NIF / VAT</label>
+          <input type="text"
+                 ngModel
+                 name="nifvat"
+                 class="form-control" id="nifvat" aria-describedby="nifvat" placeholder="NIF/VAT">
+
+          <label for="company">Company</label>
+          <input type="text"
+
+                 ngModel
+                 name="company"
+                 class="form-control" id="company" aria-describedby="company" placeholder="Company">
+
+          <label for="name">Name</label>
+          <input type="text"
+                 ngModel
+                 name="name"
+                 class="form-control" id="name" aria-describedby="name" placeholder="Name">
+
+          <label for="surname">Surname</label>
+          <input type="text"
+
+                 ngModel
+                 name="surname"
+                 class="form-control" id="surname" aria-describedby="surname" placeholder="Surname">
+
+          <label for="address1"> Address</label>
+          <input type="text"
+
+                 ngModel
+                 name="address1"
+                 class="form-control" id="address1" aria-describedby="address1" placeholder="Address1">
+          <br />
+
+          <input type="text"
+                 ngModel
+                 name="address2"
+                 class="form-control" id="address2" aria-describedby="address2" placeholder="Address2">
+
+          <label for="postcode"> Postcode</label>
+          <input type="text"
+
+                 ngModel
+                 name="postcode"
+                 class="form-control" id="postcode" aria-describedby="postcode" placeholder="Postcode">
+
+          <label for="city"> City</label>
+          <input type="text"
+
+                 ngModel
+                 name="city"
+                 class="form-control" id="city" aria-describedby="city" placeholder="City">
+
+          <label for="county"> County</label>
+          <input type="text"
+
+                 ngModel
+                 name="county"
+                 class="form-control" id="county" aria-describedby="county" placeholder="County">
+
+          <label for="country"> Country</label>
+          <input type="text"
+
+                 ngModel
+                 name="country"
+                 class="form-control" id="country" aria-describedby="country" placeholder="Country">
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <div class="panel panel-default" ngModelGroup="billingData">
+        <div class="panel-heading" >Billing Data <button class="pull-right" type="button" (click)="copyClient()">Copy Client Data</button></div>
+        <div class="panel-body">
+
+          <label for="nifvat">NIF / VAT</label>
+          <input type="text"
+
+                 ngModel
+                 name="nifvat"
+                 class="form-control" id="nifvat" aria-describedby="nifvat" placeholder="NIF/VAT">
+
+          <label for="company">Company</label>
+          <input type="text"
+
+                 ngModel
+                 name="company"
+                 class="form-control" id="company" aria-describedby="company" placeholder="Company">
+
+          <label for="name">Name</label>
+          <input type="text"
+
+                 ngModel
+                 name="name"
+                 class="form-control" id="name" aria-describedby="name" placeholder="Name">
+
+          <label for="surname">Surname</label>
+          <input type="text"
+
+                 ngModel
+                 name="surname"
+                 class="form-control" id="surname" aria-describedby="surname" placeholder="Surname">
+
+          <label for="address1">Address</label>
+          <input type="text"
+
+                 ngModel
+                 name="address1"
+                 class="form-control" id="address1" aria-describedby="address1" placeholder="Address1">
+          <br />
+          <input type="text"
+
+                 ngModel
+                 name="address2"
+                 class="form-control" id="address2" aria-describedby="address2" placeholder="Address2">
+
+          <label for="postcode">Postcode</label>
+          <input type="text"
+
+                 ngModel
+                 name="postcode"
+                 class="form-control" id="postcode" aria-describedby="postcode" placeholder="Postcode">
+
+          <label for="city">City</label>
+          <input type="text"
+
+                 ngModel
+                 name="city"
+                 class="form-control" id="city" aria-describedby="city" placeholder="City">
+
+          <label for="county">County</label>
+          <input type="text"
+                 ngModel
+                 name="county"
+                 class="form-control" id="county" aria-describedby="county" placeholder="County">
+
+          <label for="country">Country</label>
+          <input type="text"
+                 ngModel
+                 name="country"
+                 class="form-control" id="country" aria-describedby="country" placeholder="Country">
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+
+    <div class="col-lg-12">
+
+      <div class="panel panel-default" ngModelGroup="clientInfo">
+        <div class="panel-heading">Client Info</div>
+        <div class="panel-body">
+
+          <label for="login">Login</label>
+          <input type="text"
+                 ngModel
+                 name="login"
+                 class="form-control" id="login" aria-describedby="login" placeholder="NIF/VAT">
+
+          <label for="tel">Telephone</label>
+          <input type="text" class="form-control"
+                 ngModel
+                 name="tel"
+                 id="tel" aria-describedby="tel" placeholder="Company">
+          <label for="email">E-mail</label>
+          <input type="email" class="form-control"
+                 ngModel
+                 name="email"
+                 id="email" aria-describedby="email" placeholder="Email">
+
+          <label for="emailbill">E-mail Bill</label>
+          <input type="email" class="form-control"
+                 ngModel
+                 name="emailbill"
+                 id="emailbill" aria-describedby="emailbill" placeholder="Email Bill">
+          <label for="comments">Comments</label>
+          <textarea class="form-control"
+                    ngModel
+                    name="comments"
+                    rows="5" id="comments">
+          </textarea>
+
+          <label for="password">Password</label>
+          <input type="text" class="form-control"
+                 id="password"
+                 ngModel
+                 name="password"
+                 aria-describedby="password" placeholder="Postcode">
+
+          <label for="mobile">Mobile Phone</label>
+          <input type="text"
+                 class="form-control"
+                 ngModel
+                 name="mobile"
+                 id="mobile" aria-describedby="mobile" placeholder="City">
+
+          <label for="sendingdate">Sending Date</label>
+          <input type="text"
+                 class="form-control"
+                 id="sendingdate"
+                 ngModel
+                 name="sendingdate"
+                 aria-describedby="sendingdate"
+                 placeholder="County">
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <button  class="btn btn-primary" type="submit" > Save</button>
+    </div>
+  </div>
+</div>
+</form>
